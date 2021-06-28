@@ -1,11 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class Crystal : MonoBehaviour
-{
+public class Crystal : MonoBehaviour {
     public GameObject explosionPrefab;
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter(Collider other) {
         // create explosion at same location as this Crystal
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
         
